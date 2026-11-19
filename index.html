@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gintautas Čečys — vadovams ir vadovų komandoms</title>
+<meta property="og:title" content="Gintautas Čečys">
+<meta property="og:image" content="img/gintautas-cecys.webp">
+<meta name="description" content="Gintautas Čečys: 24 metų vadovavimo patirtis, geštalto ir dramos terapija. Sesijos vadovams, užsiėmimai komandoms, pranešimai renginiams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Inter+Tight:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+@keyframes ccFillA{from{width:0}to{width:calc(100% + 16px)}}
+@keyframes ccFillB{from{width:0}to{width:calc(100% + 16px)}}
+.cc-bar-a{animation:ccFillA 3200ms linear forwards}
+.cc-bar-b{animation:ccFillB 3200ms linear forwards}
+.cc-bar-first{animation:ccFillA 1400ms linear forwards}
+.cc-bar-full{width:calc(100% + 16px)}
+@keyframes ccPulse{0%,100%{opacity:1}50%{opacity:.35}}
+.cc-dot{animation:ccPulse 1.4s ease-in-out infinite}
+#top li button:hover{background:#FFF6F5!important}
+@media (prefers-reduced-motion: reduce){.cc-bar-a,.cc-bar-b,.cc-bar-first,.cc-dot{animation:none}}
+body{margin:0;background:#FFFFFF;color:#111111;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#111111}a:hover{color:#B3261E}
+</style>
+<style>
+@media (max-width: 720px){
+  #app header{padding:12px 20px!important;gap:12px!important;flex-wrap:nowrap!important}
+  #app header > a{font-size:18px!important;white-space:nowrap}
+  #app header nav{flex-wrap:nowrap!important;gap:0!important}
+  #app header nav a:not(:last-child){display:none!important}
+  #app header nav a:last-child{min-height:40px!important;padding:0 14px!important;font-size:14px!important;white-space:nowrap}
+  #app [role=group]{display:grid!important;grid-template-columns:1fr 1fr}
+  #app [role=group] button:last-child{grid-column:1 / -1}
+  #app header nav a:last-child{margin-left:auto;min-height:40px!important;padding:0 14px!important}
+  #app [style*="padding: 112px 32px"],#app [style*="padding: 96px 32px"]{padding:56px 20px!important}
+  #app [style*="padding: 56px 32px 72px"]{padding:32px 20px 48px!important;gap:36px!important}
+  #app [style*="padding: 28px 32px"],#app [style*="padding: 24px 32px"]{padding:20px!important}
+  #app h1{font-size:clamp(34px,9.6vw,44px)!important;line-height:1.02!important}
+  #app h2[style*="font-size: 44px"]{font-size:32px!important}
+  #top p[style*="font-size: 19px"],#app p[style*="font-size: 18px"]{font-size:16px!important}
+  #top a[style*="min-height: 54px"]{flex:1 1 200px;justify-content:center}
+  #top article{padding:20px!important;box-shadow:6px 6px 0 #111!important;width:calc(100% - 6px)!important}
+  #top article > div[aria-hidden]{position:static!important;order:-1;align-self:flex-start;transform:rotate(-3deg)!important;font-size:12px!important}
+  #top article li button{font-size:13px!important}
+  #app [role=group]{width:100%}
+  #app [role=group] button{flex:1 1 auto;padding:0 12px!important;font-size:14px!important}
+  #paslaugos article{padding:22px!important}
+  #paslaugos article span[style*="font-size: 56px"]{font-size:44px!important}
+  #kaip ol{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  #kaip ol button{min-height:60px!important;padding:12px!important;gap:10px!important}
+  #kaip ol button span:first-child{font-size:22px!important}
+  #kaip ol button span:last-child{font-size:15px!important}
+  #kaip [aria-live]{padding:22px!important;gap:12px!important}
+  #kaip [aria-live] h3{font-size:24px!important}
+  [aria-label="Savitikra"] button{font-size:15px!important;padding:10px 14px!important}
+  [aria-label="Savitikra"] p[aria-live]{font-size:19px!important}
+  [aria-label="Dažni klausimai"] li > button{font-size:17px!important}
+  [aria-label="Šiandienos energija"] div[style*="height: 340px"]{height:240px!important;gap:6px!important}
+  [aria-label="Šiandienos energija"] div[style*="font-size: 11px"]{display:none!important}
+  [aria-label="Šiandienos energija"] button[aria-label]{font-size:14px!important}
+  [aria-label="Atsiliepimai"] blockquote{font-size:22px!important}
+  #apie img{max-width:100%!important}
+  #kontaktai h2{font-size:40px!important}
+  footer{flex-direction:column;align-items:flex-start!important;padding:20px!important}
+}
+</style>
+<style>html{scroll-behavior:smooth}*{box-sizing:border-box}img,svg{max-width:100%}</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="tpl">
+<div style="width: 100%; background: #FFFFFF; color: #111111; font-family: Inter, system-ui, sans-serif">
+
+<header style="max-width: 1280px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; text-decoration: none">Gintautas Čečys<span style="color: {{accent}}">.</span></a>
+<nav aria-label="Pagrindinis meniu" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="#paslaugos" style="text-decoration: none">Paslaugos</a>
+<a href="#kaip" style="text-decoration: none">Kaip dirbu</a>
+<a href="#apie" style="text-decoration: none">Apie</a>
+<a href="#kontaktai" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; background: #111111; color: #FFFFFF; text-decoration: none">Pasikalbėkime</a>
+</nav>
+</header>
+
+<section id="top" style="border-top: 1px solid #111111; border-bottom: 1px solid #111111">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px 32px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555555">Vadovams ir vadovų komandoms · Vilnius</p>
+<h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: clamp(46px, 5.8vw, 88px); line-height: 0.98; letter-spacing: -0.035em">Viduje – septyni vyrai. Visi jie dirba jūsų komandai.</h1>
+<p style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.6; color: #3A3A3A">24 metus vadovavau logistikos įmonei, mokiausi geštalto ir dramos terapijos. Dabar visa ši vidinė komanda dirba vienam tikslui: kad vadovai ir jų komandos būtų brandesni ir mažiau perdegę.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#kontaktai" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 600">Susitikime pasikalbėti</a>
+<a href="#paslaugos" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border: 1px solid #111111; color: #111111; text-decoration: none; font-weight: 500">Ką siūlau</a>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
+<article style="position: relative; width: 420px; max-width: 100%; background: #FFFFFF; border: 2px solid #111111; box-shadow: 10px 10px 0 #111111; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; font-family: 'IBM Plex Mono', ui-monospace, monospace">
+<div aria-hidden="true" style="position: absolute; right: 24px; top: 22px; transform: rotate(-12deg); border: 3px solid {{accent}}; color: {{accent}}; padding: 4px 10px; font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.1em">{{ stamp }}</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; color: #555555">VIDINIS SUSIRINKIMAS</span>
+<h2 style="margin: 0; font-size: 22px; font-weight: 600">Protokolas Nr. 7</h2>
+<span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12px; color: #555555">Dalyvauja: 7 iš 7 · <span aria-hidden="true" class="cc-dot" style="width: 7px; height: 7px; border-radius: 999px; background: {{ liveDot }}"></span>{{ liveLabel }}</span>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px dashed #999999">
+<sc-for list="{{ items }}" as="it" hint-placeholder-count="7">
+<li style="position: relative; border-bottom: 1px dashed #999999">
+<sc-if value="{{ it.on }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" class="{{ barClass }}" style="position: absolute; left: -8px; bottom: -1px; height: 2px; background: {{accent}}; z-index: 1"></span></sc-if>
+<button type="button" onClick="{{ it.pick }}" aria-pressed="{{ it.on }}" style="width: 100%; min-height: 44px; padding: 8px 8px; margin: 0 -8px; width: calc(100% + 16px); border: 0; background: {{ it.rowBg }}; font: inherit; font-size: 14px; color: #111111; transition: background 200ms ease; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left">
+<span aria-hidden="true" style="flex: 0 0 18px; height: 18px; border: 2px solid {{ it.border }}; background: {{ it.bg }}; color: #FFFFFF; font-size: 12px; line-height: 14px; text-align: center">{{ it.mark }}</span>
+<span>{{ it.nr }}. Kalba: {{ it.name }}</span>
+</button>
+</li>
+</sc-for>
+</ol>
+<p aria-live="polite" style="margin: 0; min-height: 66px; font-size: 14px; line-height: 1.55"><strong style="color: {{accent}}">NUTARTA:</strong> {{ line }}</p>
+</article>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 112px 32px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px 64px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">01 — Kodėl</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.02; letter-spacing: -0.025em">Viršuje dažnai būna vieniša.</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px; font-size: 18px; line-height: 1.65; color: #3A3A3A">
+<p style="margin: 0">Vadovas atsako už rezultatus, žmones ir procesus. Bet retai turi vietą, kur galėtų sustoti ir pažiūrėti į save: kaip jaučiasi, kaip priima sprendimus, ką jo būsena daro komandai.</p>
+<p style="margin: 0">Aš ten buvau pats: 24 metai, ~170 žmonių, sandėliai ir temperatūriniai režimai. Todėl kalbu kaip kolega, o ne iš knygos.</p>
+</div>
+</section>
+
+<section id="paslaugos" style="max-width: 1280px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">02 — Paslaugos</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.02; letter-spacing: -0.025em">Kam ieškote pagalbos?</h2>
+</div>
+<div role="group" aria-label="Pasirinkite" style="display: flex; flex-wrap: wrap; border: 1px solid #111111">
+<sc-for list="{{ auds }}" as="a" hint-placeholder-count="3">
+<button type="button" onClick="{{ a.pick }}" aria-pressed="{{ a.on }}" style="min-height: 48px; padding: 0 20px; border: 0; background: {{ a.bg }}; color: {{ a.fg }}; font: inherit; font-size: 15px; font-weight: 500; cursor: pointer">{{ a.label }}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<sc-for list="{{ services }}" as="v" hint-placeholder-count="3">
+<article style="border: 2px solid {{ v.border }}; background: {{ v.bg }}; padding: 28px; display: flex; flex-direction: column; gap: 14px; transition: background 200ms ease">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Inter Tight', sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: {{ v.letterColor }}">{{ v.letter }}</span>
+<sc-if value="{{ v.on }}" hint-placeholder-val="{{ false }}"><span style="padding: 4px 10px; background: {{accent}}; color: #FFFFFF; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Jums tinka</span></sc-if>
+</div>
+<h3 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.01em">{{ v.title }}</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3A3A3A">{{ v.text }}</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #3A3A3A">
+<sc-for list="{{ v.points }}" as="pt" hint-placeholder-count="3"><li style="display: flex; gap: 8px"><span aria-hidden="true" style="color: {{accent}}">→</span>{{ pt }}</li></sc-for>
+</ul>
+<span style="margin-top: auto; font-size: 14px; color: #555555">{{ v.meta }}</span>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section id="kaip" style="background: #F4F4F2">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 32px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">03 — Kaip dirbu</span>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px">
+<sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+<li><button type="button" onClick="{{ st.pick }}" aria-pressed="{{ st.on }}" style="width: 100%; min-height: 72px; padding: 16px 18px; border: 0; border-bottom: 4px solid {{ st.bar }}; background: {{ st.bg }}; color: #111111; font: inherit; text-align: left; cursor: pointer; display: flex; gap: 14px; align-items: center">
+<span style="font-family: 'Inter Tight', sans-serif; font-size: 30px; font-weight: 700; color: {{ st.numColor }}">{{ st.n }}</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600">{{ st.title }}</span>
+</button></li>
+</sc-for>
+</ol>
+<div aria-live="polite" style="background: #FFFFFF; padding: 36px; display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: flex-start">
+<h3 style="flex: 1 1 280px; margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em">{{ step.title }}</h3>
+<div style="flex: 2 1 420px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3A3A3A">{{ step.text }}</p>
+<span style="font-size: 14px; font-weight: 600; color: {{accent}}">{{ step.meta }}</span>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Savitikra" style="max-width: 1280px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 48px 64px">
+<div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">04 — Greita savitikra</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.02; letter-spacing: -0.025em">Ar jūsų komandai laikas susirinkimui?</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555">Pažymėkite, kas skamba pažįstamai. Niekas nemato, niekas nevertina.</p>
+</div>
+<div style="flex: 2 1 520px; display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{ checks }}" as="q" hint-placeholder-count="5">
+<button type="button" onClick="{{ q.toggle }}" aria-pressed="{{ q.on }}" style="min-height: 56px; padding: 12px 18px; border: 1px solid {{ q.border }}; background: {{ q.bg }}; color: #111111; font: inherit; font-size: 16px; text-align: left; cursor: pointer; display: flex; gap: 14px; align-items: center">
+<span aria-hidden="true" style="flex: 0 0 22px; height: 22px; border: 2px solid {{ q.box }}; background: {{ q.boxBg }}; color: #FFFFFF; font-size: 14px; line-height: 18px; text-align: center">{{ q.mark }}</span>{{ q.text }}</button>
+</sc-for>
+<div style="margin-top: 14px; display: flex; flex-direction: column; gap: 10px">
+<div aria-hidden="true" style="height: 12px; background: #EEEEEE"><div style="height: 100%; width: {{ meter }}; background: {{accent}}; transition: width 250ms ease"></div></div>
+<p aria-live="polite" style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">{{ verdict }}</p>
+<sc-if value="{{ showCta }}" hint-placeholder-val="{{ false }}"><a href="#kontaktai" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 600">Užsakyti pokalbį</a></sc-if>
+</div>
+</div>
+</section>
+
+<section aria-label="Dažni klausimai" style="border-top: 1px solid #111111">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">05 — Klausimai</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.02; letter-spacing: -0.025em">Ko dažniausiai klausia</h2>
+</div>
+<ul style="flex: 2 1 560px; margin: 0; padding: 0; list-style: none; border-top: 1px solid #DDDDDD">
+<sc-for list="{{ faq }}" as="f" hint-placeholder-count="5">
+<li style="border-bottom: 1px solid #DDDDDD">
+<button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.on }}" style="width: 100%; min-height: 64px; padding: 16px 0; border: 0; background: none; color: #111111; font-family: 'Inter Tight', sans-serif; font-size: 20px; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; align-items: center">{{ f.q }}<span aria-hidden="true" style="font-size: 24px; color: {{accent}}">{{ f.sign }}</span></button>
+<sc-if value="{{ f.on }}" hint-placeholder-val="{{ false }}"><p style="margin: 0 0 20px; max-width: 720px; font-size: 17px; line-height: 1.6; color: #3A3A3A">{{ f.a }}</p></sc-if>
+</li>
+</sc-for>
+</ul>
+</div>
+</section>
+
+<section aria-label="Šiandienos energija" style="max-width: 1280px; margin: 0 auto; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">06 — Po protokolo</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.02; letter-spacing: -0.025em">Kur šiandien eina energija?</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555">Septyni dalyviai, septyni energijos lygiai. Matuota subjektyviai, bet sąžiningai.</p>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555555">Šiandienos energija · subjektyviai</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #3A3A3A"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 999px; background: #2E9E6A"></span>Tarifas: pigiausias</span>
+</div>
+<div style="position: relative; height: 340px; border-bottom: 2px solid #111111; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; align-items: end; background: repeating-linear-gradient(0deg, #EEEEEE 0 1px, transparent 1px 68px)">
+<sc-for list="{{ bars }}" as="b" hint-placeholder-count="7">
+<button type="button" onClick="{{ b.pick }}" aria-pressed="{{ b.on }}" aria-label="{{ b.name }}" style="height: {{ b.h }}; min-height: 44px; border: 2px solid {{ b.border }}; background: {{ b.fill }}; color: {{ b.fg }}; cursor: pointer; display: flex; align-items: flex-start; justify-content: center; padding-top: 8px; font-family: 'Inter Tight', sans-serif; font-size: 16px; font-weight: 700">{{ b.nr }}</button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; font-size: 11px; color: #555555; text-align: center">
+<span>Vadovas</span><span>Geštaltas</span><span>Drama</span><span>Rašymas</span><span>Bėgimas</span><span>Moto</span><span>Škoda</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-start; justify-content: space-between">
+<p style="flex: 1 1 300px; margin: 0; min-height: 52px; font-size: 17px; line-height: 1.5"><strong style="font-weight: 600; color: {{accent}}">{{ ewho }}</strong> {{ eline }}</p>
+<button type="button" onClick="{{ shuffle }}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #111111; background: #FFFFFF; color: #111111; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>Perkrauti dieną</button>
+</div>
+</div>
+
+</section>
+
+<section id="apie" style="max-width: 1280px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<img src="img/gintautas-cecys.webp" data-fallback="https://mlpeimtmgped.i.optimole.com/w:1000/h:1000/q:mauto/ig:avif/https://via3l.eu/wp-content/uploads/2026/09/team-gintautas-cecys.webp" alt="Gintautas Čečys" loading="lazy" style="flex: 1 1 320px; min-width: 0; width: 100%; max-width: 480px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; filter: grayscale(100%) contrast(1.05); background: #F0F0F0">
+<div style="flex: 2 1 520px; display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">07 — Apie</span>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.025em">Vadovas, kuris tapo terapeutu. Arba atvirkščiai.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3A3A3A">Daugiau nei du dešimtmečius vadovavau logistikos ir sandėliavimo įmonei. Mokiausi geštalto ir dramos terapijos [studijos / programos]. Su Mindaugu Pikūnu kuriame „Dialogo dirbtuves“.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3A3A3A">Laisvalaikiu bėgioju, važinėju motociklu, seku Formulę 1 ir mokausi banglenčių sporto.</p>
+</div>
+</section>
+
+<section aria-label="Atsiliepimai" style="border-top: 1px solid #111111">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 20px">
+<blockquote style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.3; letter-spacing: -0.01em">„[Tikras kliento atsiliepimas.]“</blockquote>
+<figcaption style="font-size: 15px; color: #555555">[Vardas, pareigos, įmonė]</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 20px">
+<blockquote style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.3; letter-spacing: -0.01em">„[Dirbtuvių dalyvio atsiliepimas.]“</blockquote>
+<figcaption style="font-size: 15px; color: #555555">[Vardas, pareigos, įmonė]</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="kontaktai" style="background: {{accent}}; color: #FFFFFF">
+<div style="max-width: 1280px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: clamp(44px, 5.4vw, 80px); line-height: 0.98; letter-spacing: -0.035em">Septyni balsai. Vienas pokalbis.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6">Pirmas 30 minučių pokalbis – nemokamas. Atsakau per dvi darbo dienas.</p>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<a href="mailto:info@cecys.lt" style="color: #FFFFFF">[el. paštas]@cecys.lt</a>
+<span>[telefonas]</span>
+<a href="https://www.linkedin.com/in/gintautascecys" style="color: #FFFFFF">LinkedIn</a>
+</div>
+</div>
+<form style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 18px">
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="padding: 0; margin-bottom: 10px; font-size: 14px; font-weight: 500">Dėl ko rašote?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ topics }}" as="t" hint-placeholder-count="4">
+<button type="button" onClick="{{ t.pick }}" aria-pressed="{{ t.on }}" style="min-height: 44px; padding: 0 16px; border: 1px solid #FFFFFF; background: {{ t.bg }}; color: {{ t.fg }}; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer">{{ t.label }}</button>
+</sc-for>
+</div>
+</fieldset>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Vardas<input type="text" name="vardas" style="min-height: 52px; padding: 0 16px; border: 0; background: #FFFFFF; color: #111111; font: inherit; font-weight: 400"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">El. paštas<input type="email" name="email" style="min-height: 52px; padding: 0 16px; border: 0; background: #FFFFFF; color: #111111; font: inherit; font-weight: 400"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Žinutė<textarea name="zinute" rows="4" style="padding: 16px; border: 0; background: #FFFFFF; color: #111111; font: inherit; font-weight: 400; resize: vertical"></textarea></label>
+<button type="button" style="align-self: flex-start; min-height: 56px; padding: 0 32px; border: 0; background: #111111; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer">Siųsti</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1280px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; font-size: 14px; color: #555555">
+<span>© 2026 Gintautas Čečys · Ši svetainė tobulinta ilgiau nei 10 km bėgimas. Bet ji paleista.</span>
+<span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 16px">
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid #DDDDDD; color: #3A3A3A"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 999px; background: #2E9E6A"></span>Škoda: kraunasi pigiausiu Nord Pool tarifu</span>
+<span>LT · <a href="#">EN</a></span>
+</span>
+</footer>
+
+</div>
+</template>
+<script>
+/* Mažas šablonų variklis: {{kelias}}, <sc-for>, <sc-if>, onClick. */
+class DCLogic {
+  constructor(props) { this.props = props || {}; this.state = {}; }
+  setState(p) { Object.assign(this.state, p); render(); }
+}
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { on: -1, pon: 6, auto: true, tick: 0, ev: [0, 0, 0, 0, 0, 0, 0], day: 0, hs: [86, 62, 74, 48, 92, 68, 34], aud: 0, step: 0, checks: [false, false, false, false, false], faq: 0, topic: 0 };
+    this.roles = [
+      { nr: '1', name: 'Vadovas', line: 'Jau peržiūrėjo jūsų KPI. Tyliai.' },
+      { nr: '2', name: 'Geštalto praktikas', line: 'Klausia, ką jaučiate skaitydami šį sakinį.' },
+      { nr: '3', name: 'Dramos terapeutas', line: 'Jau dalija vaidmenų korteles. Jums teko „Skeptikas“.' },
+      { nr: '4', name: 'Rašytojas', line: 'Šį sakinį perrašė septynis kartus.' },
+      { nr: '5', name: 'Bėgikas', line: 'Išbėgo 10 km. Grįš per 65 minutes. Gal.' },
+      { nr: '6', name: 'Motociklininkas', line: 'Yamaha užsivedė iš pirmo karto. Kitaip nei ši svetainė.' },
+      { nr: '7', name: 'Elektros kainų strategas', line: 'Škoda kraunasi. Pigiausiu tarifu, aišku.' }
+    ];
+    this.auds = ['Sau, kaip vadovui', 'Savo komandai', 'Renginiui'];
+    this.services = [
+      { letter: 'A', title: 'Sesijos vadovams', text: 'Vienas prieš vieną. Sprendimai, santykiai, energija, perdegimo ženklai. Geštalto prieiga.', points: ['Saugi erdvė be vertinimo', 'Aiškesni sprendimai', 'Daugiau energijos'], meta: '[Trukmė, dažnis]' },
+      { letter: 'B', title: 'Užsiėmimai komandoms', text: '„Didysis susirinkimas“ ir kiti patyriminiai formatai su vaidmenų kortelėmis.', points: ['8 dalyviai, 90 minučių', 'Komanda pamato savo dinamiką', 'Konkretūs susitarimai'], meta: '[Grupės dydis, kaina]' },
+      { letter: 'C', title: 'Pranešimai renginiams', text: 'Brandžios komandos, dialogas, vadovo emocinė gerovė. Tiesiogiai arba per agentūrą.', points: ['Konferencijoms', 'Vadovų susitikimams', 'Su humoru ir praktika'], meta: '[Temos, LT / EN]' }
+    ];
+    this.steps = [
+      { title: 'Pirmas pokalbis', text: 'Susitinkame arba pasikalbame internetu. Papasakojate, kas vyksta, o aš – kaip galėčiau padėti. Jei nematysiu prasmės, pasakysiu tiesiai.', meta: '30 min. · nemokamai' },
+      { title: 'Susitarimas', text: 'Aiškiai sutariame tikslą, formatą, laiką ir kainą. Jokių smulkių šriftų.', meta: '1 laiškas' },
+      { title: 'Darbas', text: 'Sesijos ar užsiėmimai. Konfidencialiai, be skubėjimo, su dėmesiu tam, kas vyksta čia ir dabar.', meta: '[Paprastai 4–8 susitikimai]' },
+      { title: 'Apžvalga', text: 'Pažiūrime, kas pasikeitė, ko dar trūksta, ir nusprendžiame, ar tęsti.', meta: '1 susitikimas' }
+    ];
+    this.checks = [
+      'Susirinkimuose kalba tie patys du žmonės.',
+      'Sprendimai priimami koridoriuje, ne prie stalo.',
+      'Kada vadovas paskutinį kartą atostogavo – prisiminti sunku.',
+      'Komandoje daugiau „taip, bet“ nei „taip, ir“.',
+      'Penktadienio vakarą visi jaučiasi kaip po maratono.'
+    ];
+    this.faq = [
+      { q: 'Ar tai terapija, ar koučingas?', a: 'Tai darbas su vadovu ir komanda, kuriame naudoju geštalto ir dramos terapijos metodus. Tai nėra gydymas – jei matysiu, kad reikia terapeuto, pasakysiu tiesiai.' },
+      { q: 'Ar viskas konfidencialu?', a: 'Taip. Tai, kas pasakyta sesijoje, joje ir lieka. Su įmone aptariame tik bendrus tikslus, jei taip susitariame.' },
+      { q: 'Ar dramos užsiėmime reikės vaidinti?', a: 'Šiek tiek – bet aktorystės niekas nereikalauja. Dažniausiai po 10 minučių visi pamiršta, kad buvo nedrąsu.' },
+      { q: 'Kiek tai kainuoja?', a: '[Kainodara arba: priklauso nuo formato – aptariame per pirmą pokalbį.]' },
+      { q: 'Ar dirbate angliškai?', a: '[Taip / ne – įrašyti.]' }
+    ];
+    this.topics = ['Sesijos vadovui', 'Komandos užsiėmimas', 'Pranešimas', 'Tiesiog kava'];
+    this.elines = [
+      ['Energija – kaip ketvirtadienio popietę prieš valdybos posėdį.', 'Pilnas: jau trys sprendimai iki kavos.', 'Taupo jėgas – po pietų biudžeto peržiūra.', 'Kraunasi tyliai, kaip geras sandėlis naktį.'],
+      ['Pastebi, kad energijos daug. Ir tai, kad tai pastebi.', 'Energija čia ir dabar. Rytoj – pažiūrėsim.', 'Klausia stulpelio: o kaip tau dabar?', 'Ramus. Nieko netaiso, tiesiog būna.'],
+      ['Repetuoja naują pratimą. Kortelės jau išdalintos.', 'Šiandien vaidina „Ramų žmogų“. Sekasi vidutiniškai.', 'Pilna scena – trūksta tik žiūrovų.', 'Pertrauka tarp veiksmų. Uždanga nuleista.'],
+      ['Parašė vieną sakinį. Ištrynė du.', 'Įkvėpimas atėjo 2 val. nakties. Kaip visada.', 'Antras skyrius vis dar pirmas.', 'Šiandien redaguoja. Skausmingai.'],
+      ['10 km per 45 min. Na, gerai, per 60.', 'Poilsio diena. Bet vis tiek galvoja apie bėgimą.', 'Grįžo namo. Tai jau pergalė.', 'Kojos sako „ne“, galva sako „taip“.'],
+      ['Yamaha užsivedė iš pirmo karto. Diena pavyko.', 'Lyja. Žiūri F1 pakartojimą.', 'Lygina 2004 ir 2026 metų bolidus. Vėl.', 'Kelias laisvas, galva tuščia – idealu.'],
+      ['Kraunasi 03:00, kai elektra pigiausia.', 'Kaina šoktelėjo – Škoda kantriai laukia.', 'Algoritmas sutaupė 3,40 €. Programavimo valandos – neskaičiuojamos.', 'Nord Pool rodo minusinę kainą. Šventė!']
+    ];
+  }
+  componentDidMount() {
+    this.restart(1400);
+  }
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+    clearTimeout(this.idle);
+  }
+  takeOver(i) {
+    clearTimeout(this.timer);
+    clearTimeout(this.idle);
+    this.setState({ pon: i, auto: false });
+    this.idle = setTimeout(() => { this.setState({ auto: true, tick: this.state.tick + 1 }); this.restart(); }, 10000);
+  }
+  restart(first) {
+    clearTimeout(this.timer);
+    const step = () => {
+      if (!this.state.auto) return;
+      this.setState({ pon: (this.state.pon + 1) % this.roles.length, tick: this.state.tick + 1 });
+      this.timer = setTimeout(step, 3200);
+    };
+    this.timer = setTimeout(step, first || 3200);
+  }
+  renderVals() {
+    const st = this.state;
+    const on = st.on;
+    const accent = this.props.accent ?? '#B3261E';
+    const count = st.checks.filter(Boolean).length;
+    const verdicts = [
+      'Puiku – jūsų komanda atrodo gyva. Kavos vis tiek galim išgerti.',
+      'Vienas signalas. Verta pasikalbėti, kol jis neužaugo.',
+      'Keli signalai. Verta pasikalbėti, kol jie neužaugo.',
+      'Laikas Didžiajam susirinkimui.',
+      'Laikas Didžiajam susirinkimui. Rimtai.',
+      'Visi septyni jau kelia ranką. Rašykite šiandien.'
+    ];
+    return {
+      accent: accent,
+      ewho: on >= 0 ? this.roles[on].name + '.' : (st.day > 0 ? 'Diena perkrauta (' + (st.day + 1) + '-oji).' : 'Septyni stulpeliai.'),
+      eline: on >= 0 ? this.elines[on][st.ev[on]] : (st.day > 0 ? 'Nauji skaičiai, nauji atsakymai. Paspauskite stulpelį.' : 'Paspauskite bet kurį – sužinosite, kur šiandien eina energija.'),
+      line: st.pon >= 0 ? this.roles[st.pon].line : 'Pažymėkite darbotvarkės klausimą – pamatysite nutarimą.',
+      stamp: st.pon >= 0 ? 'PRITARTA' : 'SVARSTOMA',
+      auto: st.auto,
+      barClass: !st.auto ? 'cc-bar-full' : (st.tick === 0 ? 'cc-bar-first' : (st.tick % 2 ? 'cc-bar-a' : 'cc-bar-b')),
+      liveDot: st.auto ? '#2E9E6A' : accent,
+      liveLabel: st.auto ? 'gyvai, spauskite punktus' : 'pirmininkaujate jūs',
+      items: this.roles.map((r, i) => ({
+        ...r, on: st.pon === i,
+        bg: st.pon === i ? accent : '#FFFFFF',
+        border: st.pon === i ? accent : '#111111',
+        mark: st.pon === i ? '✓' : '',
+        rowBg: st.pon === i ? '#FFF6F5' : 'transparent',
+        pick: () => this.takeOver(i)
+      })),
+      shuffle: () => this.setState({
+        hs: st.hs.map((h, i) => i === 6 ? 20 + Math.floor(Math.random() * 20) : 35 + Math.floor(Math.random() * 60)),
+        ev: st.ev.map((e, i) => (e + 1 + Math.floor(Math.random() * (this.elines[i].length - 1))) % this.elines[i].length),
+        day: st.day + 1
+      }),
+      bars: this.roles.map((r, i) => ({
+        ...r, on: on === i,
+        fg: on === i ? '#FFFFFF' : '#111111',
+        border: on === i ? accent : '#111111',
+        h: st.hs[i] + '%',
+        fill: on === i ? accent : (i === 6 ? 'repeating-linear-gradient(45deg, #2E9E6A 0 6px, #FFFFFF 6px 12px)' : '#FFFFFF'),
+        pick: () => this.setState({ on: i })
+      })),
+      auds: this.auds.map((label, i) => ({
+        label, on: st.aud === i,
+        bg: st.aud === i ? '#111111' : '#FFFFFF',
+        fg: st.aud === i ? '#FFFFFF' : '#111111',
+        pick: () => this.setState({ aud: i })
+      })),
+      services: this.services.map((v, i) => ({
+        ...v, on: st.aud === i,
+        border: st.aud === i ? accent : '#DDDDDD',
+        bg: st.aud === i ? '#FFF6F5' : '#FFFFFF',
+        letterColor: st.aud === i ? accent : '#111111'
+      })),
+      steps: this.steps.map((s, i) => ({
+        ...s, n: String(i + 1), on: st.step === i,
+        bg: st.step === i ? '#FFFFFF' : 'transparent',
+        bar: st.step === i ? accent : '#CCCCCC',
+        numColor: st.step === i ? accent : '#777777',
+        pick: () => this.setState({ step: i })
+      })),
+      step: this.steps[st.step],
+      checks: this.checks.map((text, i) => ({
+        text, on: st.checks[i],
+        mark: st.checks[i] ? '✓' : '',
+        border: st.checks[i] ? accent : '#DDDDDD',
+        bg: st.checks[i] ? '#FFF6F5' : '#FFFFFF',
+        box: st.checks[i] ? accent : '#111111',
+        boxBg: st.checks[i] ? accent : '#FFFFFF',
+        toggle: () => this.setState({ checks: st.checks.map((c, j) => j === i ? !c : c) })
+      })),
+      meter: (count / 5 * 100) + '%',
+      verdict: verdicts[count],
+      showCta: count >= 1,
+      faq: this.faq.map((f, i) => ({
+        ...f, on: st.faq === i,
+        sign: st.faq === i ? '–' : '+',
+        toggle: () => this.setState({ faq: st.faq === i ? -1 : i })
+      })),
+      topics: this.topics.map((label, i) => ({
+        label, on: st.topic === i,
+        bg: st.topic === i ? '#FFFFFF' : 'transparent',
+        fg: st.topic === i ? accent : '#FFFFFF',
+        pick: () => this.setState({ topic: i })
+      }))
+    };
+  }
+}
+
+const comp = new Component({});
+const tpl = document.getElementById('tpl').content;
+const app = document.getElementById('app');
+function look(path, scope) {
+  path = path.trim();
+  if (path === 'true') return true;
+  if (path === 'false') return false;
+  if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+  let v = scope;
+  for (const k of path.split('.')) { if (v == null) return ''; v = v[k]; }
+  return v == null ? '' : v;
+}
+const HOLE = /\{\{([^}]+)\}\}/g;
+const WHOLE = /^\s*\{\{([^}]+)\}\}\s*$/;
+function interp(str, scope) { return str.replace(HOLE, (_, p) => { const v = look(p, scope); return typeof v === 'function' ? '' : String(v); }); }
+function build(node, scope, out) {
+  if (node.nodeType === 3) { out.appendChild(document.createTextNode(interp(node.nodeValue, scope))); return; }
+  if (node.nodeType !== 1) return;
+  const tag = node.tagName.toLowerCase();
+  if (tag === 'sc-for') {
+    const list = look((node.getAttribute('list').match(WHOLE) || [, ''])[1], scope) || [];
+    const as = node.getAttribute('as') || 'item';
+    list.forEach((it, i) => { const sc = Object.assign(Object.create(scope), { [as]: it, $index: i }); node.childNodes.forEach(c => build(c, sc, out)); });
+    return;
+  }
+  if (tag === 'sc-if') {
+    if (look((node.getAttribute('value').match(WHOLE) || [, ''])[1], scope)) node.childNodes.forEach(c => build(c, scope, out));
+    return;
+  }
+  const el = node.namespaceURI === 'http://www.w3.org/2000/svg' ? document.createElementNS(node.namespaceURI, node.tagName) : document.createElement(node.tagName);
+  for (const a of node.attributes) {
+    if (a.name.startsWith('hint-')) continue;
+    const m = a.value.match(WHOLE);
+    if (/^on[a-z]+$/i.test(a.name) && m) { const fn = look(m[1], scope); if (typeof fn === 'function') el.addEventListener(a.name.slice(2).toLowerCase(), fn); continue; }
+    el.setAttribute(a.name, interp(a.value, scope));
+  }
+  const src = tag === 'template' ? node.content : node;
+  src.childNodes.forEach(c => build(c, scope, el));
+  out.appendChild(el);
+}
+function render() {
+  const keep = {};
+  app.querySelectorAll('input[name], textarea[name]').forEach(f => keep[f.name] = f.value);
+  const frag = document.createDocumentFragment();
+  const vals = comp.renderVals();
+  tpl.childNodes.forEach(n => build(n, vals, frag));
+  app.replaceChildren(frag);
+  app.querySelectorAll('input[name], textarea[name]').forEach(f => { if (keep[f.name] != null) f.value = keep[f.name]; });
+  wireForm();
+  app.querySelectorAll('img[data-fallback]').forEach(im => im.addEventListener('error', () => { if (im.src !== im.dataset.fallback) im.src = im.dataset.fallback; }, { once: true }));
+}
+function wireForm() {
+  const form = app.querySelector('#kontaktai form');
+  if (!form) return;
+  const btn = form.querySelector('button[type="button"]:last-of-type');
+  const send = [...form.querySelectorAll('button')].pop();
+  send.onclick = () => {
+    const g = n => (form.querySelector('[name="' + n + '"]') || {}).value || '';
+    const topic = form.querySelector('fieldset button[aria-pressed="true"]');
+    const subj = 'cecys.lt: ' + (topic ? topic.textContent.trim() : 'žinutė');
+    const bodyTxt = g('zinute') + '\n\n' + g('vardas') + ' · ' + g('email');
+    location.href = 'mailto:info@cecys.lt?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(bodyTxt);
+  };
+}
+render();
+if (comp.componentDidMount) comp.componentDidMount();
+</script>
+</body>
+</html>
